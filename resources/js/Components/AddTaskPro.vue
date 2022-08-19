@@ -51,6 +51,7 @@ export default {
                 .then(res => {
                     console.log(res.data)
                     context.emit("taskAdded", res.data);
+                    newTask.title = "";
                 })
                 .catch(err => {
                     handleErrors(err);
