@@ -43,3 +43,5 @@ Route::middleware('auth')->group(function () {
     Route::post('statuses', [StatusController::class ,'store'])->name('statuses.store');
     Route::put('statuses', [StatusController::class, 'update'])->name('statuses.update');
 });
+
+echo "test";
